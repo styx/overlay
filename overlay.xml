@@ -2,7 +2,7 @@
 <layman>
   <overlay
     contact = "styx.mp@gmail.com"
-    name = "styx-personal"
+    name = "styx"
     src = "git://github.com/styx/styx-overlay.git"
     type = "git"
     status = "unofficial">

@@ -45,7 +45,7 @@ RDEPEND=">=app-admin/eselect-vi-1.1
 	perl? ( dev-lang/perl )
 	python? ( ${PYTHON_DEPS} )
 	racket? ( dev-scheme/racket )
-	ruby? ( || (dev-lang/ruby:2.1 dev-lang/ruby:2.0 dev-lang/ruby:1.9 dev-lang/ruby:1.8 ) )
+	ruby? ( || ( dev-lang/ruby:2.1 dev-lang/ruby:2.0 dev-lang/ruby:1.9 dev-lang/ruby:1.8 ) )
 	selinux? ( sys-libs/libselinux )
 	tcl? ( dev-lang/tcl )
 	X? ( x11-libs/libXt )"

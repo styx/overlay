@@ -32,7 +32,7 @@ LICENSE="
 	unRAR
 "
 
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE="+udisks"
 
@@ -87,7 +87,7 @@ src_prepare() {
 		-e "s|PreserveMIMEDefaults():||" \
 		-e "s|xdg-icon-resource install|\\0 --mode user|" \
 		-e "s|cc(\\['xdg-desktop-menu', 'forceupdate'\\])|#\\0|" \
-		-e "s|'xdg-mime', 'install'|\\0 '--mode', 'user'|" \
+		-e "s|'xdg-mime', 'install'|\\0, '--mode', 'user'|" \
 		-i src/calibre/linux.py || die "sed failed to patch linux.py"
 
 	# Disable unnecessary privilege dropping for bug #287067.

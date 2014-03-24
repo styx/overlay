@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/hub/hub-1.11.0.ebuild,v 1.3.1 2014/01/17 17:25:16 styx Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/hub/hub-1.11.1-r1.ebuild,v 1.3.1 2014/01/17 17:25:16 styx Exp $
 
 EAPI="5"
 

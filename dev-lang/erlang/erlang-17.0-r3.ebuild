@@ -10,12 +10,6 @@ inherit autotools elisp-common eutils java-pkg-opt-2 multilib systemd versionato
 # NOTE: If you need symlinks for binaries please tell maintainers or
 # open up a bug to let it be created.
 
-MY_VER=($(get_version_components))
-MY_MAJ="${MY_VER[0]}"
-MY_MIN="${MY_VER[1]:+0}${MY_VER[1]}"
-MY_MIC="${MY_VER[2]:+-}${MY_VER[2]}"
-MY_PV="R${MY_MAJ}B${MY_MIN}${MY_MIC}"
-
 DESCRIPTION="Erlang programming language, runtime environment, and large collection of libraries"
 HOMEPAGE="http://www.erlang.org/"
 SRC_URI="http://www.erlang.org/download/otp_src_${PV}.tar.gz
@@ -66,7 +60,7 @@ src_prepare() {
 
 	# bug 383697
 	sed -i '1i#define OF(x) x' erts/emulator/drivers/common/gzio.c
-	epatch "${FILESDIR}/16.2-tinfo.patch"
+
 	cd erts && eautoreconf
 }
 

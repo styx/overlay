@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-lang/erlang-16"
+DEPEND=">=dev-lang/erlang-17"
 RDEPEND="${DEPEND}"
 
 src_compile() {

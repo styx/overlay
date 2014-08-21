@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(update-styx.world)<1
+
+#-ini(update-styx.world,1)-#
+
+#?os_linux_pkglist==CLDXStyx#
+games-util/steam-launcher
+sys-power/powertop
+#os_linux_pkglist#

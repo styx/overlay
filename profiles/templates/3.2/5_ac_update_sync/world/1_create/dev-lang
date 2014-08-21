@@ -1,5 +1,8 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDXStyx)!=#
-sys-power/powertop
+dev-lang/ruby
+dev-lang/ghc
+dev-lang/erlang
+dev-lang/elixir
 #in#

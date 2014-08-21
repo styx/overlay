@@ -1,3 +1,6 @@
 ~games-util/steam-launcher-1.0.0.47 amd64 x86
 ~www-client/firefox-bin-31.0 amd64 x86
 ~sys-power/powertop-2.6 amd64 x86
+~dev-lang/ghc-7.8.3 amd64 x86
+~dev-lang/erlang-17.1 amd64 x86
+~dev-lang/elixir-0.15 amd64 x86

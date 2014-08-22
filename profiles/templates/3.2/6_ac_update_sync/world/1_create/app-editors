@@ -1,0 +1,6 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDXStyx)!=#
+app-editors/vim
+app-editors/gvim
+#in#

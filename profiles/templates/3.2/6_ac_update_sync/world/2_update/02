@@ -1,0 +1,22 @@
+# Calculate format=world name=world ini(update-styx.world)<2
+
+#-ini(update-styx.world,2)-#
+
+#?os_linux_shortname==CLDXStyx#
+!dev-util/catfish
+!media-gfx/shotwell
+!media-sound/audacious
+!media-sound/clementine
+!net-irc/xchat
+!net-irc/hexchat
+!mail-client/claws-mail
+!mail-client/claws-mail-address_keeper
+!mail-client/claws-mail-fancy
+!x11-themes/claws-mail-theme-calculate
+!www-client/chromium
+!www-apps/chromium-adblock
+!www-plugins/chrome-binary-plugins
+!net-im/pidgin
+!x11-plugins/pidgin-libnotify
+dev-util/meld
+#os_linux_shortname#

@@ -9,3 +9,4 @@ www-plugins/chrome-binary-plugins
 <virtual/rubygems-7
 net-im/pidgin
 x11-plugins/pidgin-libnotify
+net-p2p/deluge

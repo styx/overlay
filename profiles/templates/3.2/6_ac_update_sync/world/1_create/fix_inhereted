@@ -46,4 +46,5 @@ app-office/libreoffice-bin
 !www-plugins/chrome-binary-plugins
 !net-im/pidgin
 !x11-plugins/pidgin-libnotify
+!net-p2p/deluge
 #in#

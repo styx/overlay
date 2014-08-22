@@ -1,5 +1,6 @@
 media-libs/libsdl pulseaudio
 app-editors/gvim python lua
+app-editors/vim python lua
 sys-kernel/calculate-sources -minimal
 media-video/mplayer2 -cpudetection -3dnow pulseaudio
 media-libs/libtxc_dxtn abi_x86_32

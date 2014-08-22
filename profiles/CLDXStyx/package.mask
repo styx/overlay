@@ -8,5 +8,7 @@ www-plugins/chrome-binary-plugins
 <dev-lang/ruby-2.1
 <virtual/rubygems-7
 net-im/pidgin
+x11-plugins/pidgin-hotkeys
+x11-plugins/purple-plugin_pack
 x11-plugins/pidgin-libnotify
 net-p2p/deluge

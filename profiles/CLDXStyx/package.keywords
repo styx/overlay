@@ -5,3 +5,4 @@
 ~dev-lang/erlang-17.1 amd64 x86
 ~dev-lang/elixir-0.15 amd64 x86
 ~dev-db/redis-2.8.13 amd64 x86
+~dev-util/valgrind-3.9.0 amd64 x86

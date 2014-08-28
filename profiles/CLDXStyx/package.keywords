@@ -6,3 +6,4 @@
 ~dev-lang/elixir-0.15 amd64 x86
 ~dev-db/redis-2.8.13 amd64 x86
 ~dev-util/valgrind-3.9.0 amd64 x86
+~kde-base/kcachegrind-4.14.0 amd64 x86

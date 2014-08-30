@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(update-styx.world)<6
+
+#-ini(update-styx.world,6)-#
+
+#?os_linux_shortname==CLDXStyx#
+media-gfx/mypaint
+#os_linux_shortname#

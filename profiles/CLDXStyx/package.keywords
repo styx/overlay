@@ -18,3 +18,4 @@
 ~kde-base/khelpcenter-4.14.0 ~amd64
 ~media-libs/phonon-vlc-0.7.2 ~amd64
 # kcachegrind and dependencies end
+>=media-gfx/mypaint-1.1.0-r1

@@ -11,3 +11,4 @@ x11-libs/libdrm vmware video_cards_radeon
 media-libs/mesa vmware
 >=dev-lang/ghc-7.6.3-r1 llvm
 >=dev-python/PyQt4-4.10.3-r2 webkit
+>=media-libs/gd-2.0.35-r4 fontconfig

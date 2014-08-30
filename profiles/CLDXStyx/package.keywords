@@ -6,4 +6,15 @@
 ~dev-lang/elixir-0.15 amd64 x86
 ~dev-db/redis-2.8.13 amd64 x86
 ~dev-util/valgrind-3.9.0 amd64 x86
+# kcachegrind and dependencies
 ~kde-base/kcachegrind-4.14.0 amd64 x86
+~kde-base/kde-env-4.14.0 ~amd64
+~kde-base/kdesu-4.14.0 ~amd64
+~kde-base/oxygen-icons-4.14.0 ~amd64
+~kde-base/katepart-4.14.0 ~amd64
+~kde-base/kdelibs-4.14.0 ~amd64
+~media-libs/phonon-gstreamer-4.7.2 ~amd64
+~media-libs/phonon-4.7.2 ~amd64
+~kde-base/khelpcenter-4.14.0 ~amd64
+~media-libs/phonon-vlc-0.7.2 ~amd64
+# kcachegrind and dependencies end

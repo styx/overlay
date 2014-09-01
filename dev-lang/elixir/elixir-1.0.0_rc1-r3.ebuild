@@ -5,10 +5,14 @@
 EAPI=5
 
 inherit multilib
+inherit versionator
+
+MY_PV=$(replace_version_separator 3 '-')
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 DESCRIPTION="Elixir programming language"
 HOMEPAGE="http://elixir-lang.org"
-SRC_URI="https://github.com/elixir-lang/elixir/archive/v1.0.0-rc1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/elixir-lang/elixir/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0 ErlPL-1.1"
 SLOT="0"

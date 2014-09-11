@@ -19,4 +19,4 @@
 ~media-libs/phonon-vlc-0.7.2  amd64 x86
 # kcachegrind and dependencies end
 >=media-gfx/mypaint-1.1.0-r1 amd64 x86
->=media-sound/teamspeak-client-bin-3.0.16 amd64 x86
+=media-sound/teamspeak-client-bin-3.0.13.1 amd64 x86

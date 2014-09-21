@@ -21,3 +21,4 @@
 >=media-gfx/mypaint-1.1.0-r1 amd64 x86
 =media-sound/teamspeak-client-bin-3.0.13.1 amd64 x86
 >=app-office/libreoffice-l10n-4.2.6.3-r1 amd64 x86
+~dev-python/pygpgme-0.3-r1 amd64 x86

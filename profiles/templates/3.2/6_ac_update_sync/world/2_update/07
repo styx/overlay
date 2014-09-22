@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(update-styx.world)<7
+
+#-ini(update-styx.world,7)-#
+
+#?os_linux_shortname==CLDXStyx#
+app-misc/jq
+#os_linux_shortname#

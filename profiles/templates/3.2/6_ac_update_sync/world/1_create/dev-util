@@ -4,4 +4,5 @@
 dev-util/meld
 dev-util/valgrind
 kde-base/kcachegrind
+app-misc/jq
 #in#

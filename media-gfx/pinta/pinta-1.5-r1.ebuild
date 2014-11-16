@@ -10,6 +10,9 @@ DESCRIPTION="Simple Painting for Gtk"
 HOMEPAGE="http://pinta-project.com"
 SRC_URI="https://github.com/PintaProject/Pinta/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
+MY_P="Pinta-${PV}"
+S="${WORKDIR}/${MY_P}"
+
 KEYWORDS="amd64 x86"
 
 LICENSE="MIT CC-BY-3.0"
@@ -29,6 +32,10 @@ RDEPEND="${COMMON_DEPEND}
 DEPEND="${COMMON_DEPEND}
 	dev-util/intltool
 	virtual/pkgconfig"
+
+src_configure() {
+    $(${S}/autogen.sh)
+}
 
 src_prepare() {
 	local i

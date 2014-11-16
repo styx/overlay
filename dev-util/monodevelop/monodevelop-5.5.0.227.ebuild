@@ -1,23 +1,20 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: ./dev-util/monodevelop/monodevelop-5.0.1.ebuild,v 1.5 2014/10/16 09:18:05 styx Exp $
+# $Header: ./dev-util/monodevelop/monodevelop-5.5.0.227.ebuild,v 1.5 2014/10/16 09:18:05 styx Exp $
 
 EAPI=4
 inherit fdo-mime gnome2-utils mono versionator eutils
 
-MY_PV=$(replace_version_separator 3 '-')
-S="${WORKDIR}/${PN}-${MY_PV}"
-
 DESCRIPTION="Integrated Development Environment for .NET"
 HOMEPAGE="http://www.monodevelop.com/"
-SRC_URI="http://download.mono-project.com/sources/${PN}/${PN}-${MY_PV}.tar.bz2"
+SRC_URI="http://download.mono-project.com/sources/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+subversion +git"
 
-RDEPEND=">=dev-lang/mono-2.10.9
+RDEPEND=">=dev-lang/mono-3.0.7
 	>=dev-dotnet/gconf-sharp-2.24.0
 	>=dev-dotnet/glade-sharp-2.12.9
 	>=dev-dotnet/gnome-sharp-2.24.0

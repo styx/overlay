@@ -9,6 +9,8 @@ DESCRIPTION="Integrated Development Environment for .NET"
 HOMEPAGE="http://www.monodevelop.com/"
 SRC_URI="http://download.mono-project.com/sources/${PN}/${P}.tar.bz2"
 
+S="${WORKDIR}/${PN}-5.5"
+
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"

@@ -14,3 +14,4 @@ media-libs/mesa vmware
 >=media-libs/gd-2.0.35-r4 fontconfig
 >=dev-libs/protobuf-2.5.0 python
 dev-util/monodevelop -subversion
+dev-lang/erlang wxwidgets

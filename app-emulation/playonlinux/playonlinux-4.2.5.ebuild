@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/playonlinux/playonlinux-4.2.4.ebuild,v 1.1 2014/08/05 00:54:27 zx2c4 Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/playonlinux/playonlinux-4.2.5.ebuild,v 1.1 2014/08/05 00:54:27 zx2c4 Exp $
 
 EAPI="5"
 PYTHON_COMPAT=( python2_7 )
@@ -49,8 +49,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/${PN}-4.2.4-pol-bash.patch"
-	epatch "${FILESDIR}/${PN}-4.2.4-binary-plugin.patch"
+	epatch "${FILESDIR}/${PN}-4.2.5-pol-bash.patch"
+	epatch "${FILESDIR}/${PN}-4.2.5-binary-plugin.patch"
 
 	python_fix_shebang .
 

@@ -3,31 +3,38 @@
 # $Header: $
 
 EAPI=5
+
 inherit cmake-utils flag-o-matic git-r3
+
+EGIT_REPO_URI="https://github.com/neovim/neovim"
+KEYWORDS=""
 
 DESCRIPTION="Vim's rebirth for the 21st century"
 HOMEPAGE="https://github.com/neovim/neovim"
-EGIT_REPO_URI="git://github.com/neovim/neovim.git"
 
 LICENSE="vim"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="dev-lang/perl
-  >=dev-libs/libuv-0.11.27
-  dev-libs/msgpack
-  sys-libs/ncurses"
-DEPEND="${RDEPEND}
-  dev-lang/luajit
-  dev-lua/LuaBitOp
-  dev-lua/lpeg
-  dev-lua/cmsgpack
-  virtual/libiconv
-  virtual/libintl"
+RDEPEND="
+  app-admin/eselect-vi
+  sys-libs/ncurses
+"
+DEPEND="
+  ${RDEPEND}
+  >=dev-libs/libuv-0.11.29
+  || (
+	dev-lua/lpeg
+	dev-lua/lulpeg[lpeg_replace]
+  )
+  dev-lang/luajit:2
+  =dev-libs/msgpack-9999
+  dev-lua/messagepack
+"
 
-src_configure() {
-  append-flags "-Wno-error -DNDEBUG -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1"
-  local mycmakeargs=( -DCMAKE_BUILD_TYPE=Release )
+src_configure()  {
+  append-cflags "-D_FORTIFY_SOURCE=1"
   cmake-utils_src_configure
 }
+

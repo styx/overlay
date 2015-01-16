@@ -3,30 +3,31 @@
 # $Header: $
 
 EAPI=5
-
-inherit cmake-utils
-
-if [ "${PV}" = "9999" ]; then
-	EGIT_REPO_URI="git://github.com/neovim/neovim.git"
-	inherit git-r3
-	KEYWORDS=""
-else
-	SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
-fi
+inherit cmake-utils flag-o-matic git-r3
 
 DESCRIPTION="Vim's rebirth for the 21st century"
 HOMEPAGE="https://github.com/neovim/neovim"
+EGIT_REPO_URI="git://github.com/neovim/neovim.git"
 
 LICENSE="vim"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="app-admin/eselect-vi
-	sys-libs/ncurses"
+RDEPEND="dev-lang/perl
+  >=dev-libs/libuv-0.11.27
+  dev-libs/msgpack
+  sys-libs/ncurses"
 DEPEND="${RDEPEND}
-	dev-lang/luajit
-	>=dev-libs/libuv-0.11.19
-	dev-lua/lpeg
-	dev-lua/cmsgpack"
+  dev-lang/luajit
+  dev-lua/LuaBitOp
+  dev-lua/lpeg
+  dev-lua/cmsgpack
+  virtual/libiconv
+  virtual/libintl"
+
+src_configure() {
+  append-flags "-Wno-error -DNDEBUG -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1"
+  local mycmakeargs=( -DCMAKE_BUILD_TYPE=Release )
+  cmake-utils_src_configure
+}

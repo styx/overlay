@@ -6,8 +6,7 @@ www-client/chromium
 www-apps/chromium-adblock
 www-apps/chromium-ublock
 www-plugins/chrome-binary-plugins
-<dev-lang/ruby-2.1
-<virtual/rubygems-7
+<virtual/rubygems-10
 net-im/pidgin
 x11-plugins/pidgin-hotkeys
 x11-plugins/purple-plugin_pack
@@ -15,4 +14,4 @@ x11-plugins/pidgin-libnotify
 net-p2p/deluge
 www-client/firefox
 www-client/seamonkey
-<=dev-lang/ruby-2.1
+<dev-lang/ruby-2.2.0

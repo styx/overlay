@@ -13,13 +13,13 @@ EGIT_REPO_URI="git://linuxwacom.git.sourceforge.net/gitroot/linuxwacom/${PN}"
 [[ ${PV} != 9999* ]] && \
 	SRC_URI="mirror://sourceforge/linuxwacom/${PN}/${P}.tar.bz2"
 
-KEYWORDS="~alpha ~amd64 arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="debug"
 
 # depend on libwacom for its udev rules, bug #389633
 RDEPEND="dev-libs/libwacom
 	virtual/udev
-	>=x11-base/xorg-server-1.7
+	>=x11-base/xorg-server-1.6
 	x11-libs/libX11
 	x11-libs/libXext
 	x11-libs/libXi

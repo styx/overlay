@@ -1,0 +1,5 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDXStyx)!=#
+net-p2p/transmission
+#in#

@@ -1,6 +1,5 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDXStyx)!=#
-media-gfx/mypaint
-media-video/vlc
+app-text/calibre
 #in#

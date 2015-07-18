@@ -1,0 +1,9 @@
+# Calculate format=world name=world ini(update-styx.world)<8
+
+#-ini(update-styx.world,8)-#
+
+#?os_linux_shortname==CLDXStyx#
+media-video/vlc
+app-text/calibre
+!media-sound/clementine
+#os_linux_shortname#

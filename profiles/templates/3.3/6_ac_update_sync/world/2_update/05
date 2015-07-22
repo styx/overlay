@@ -3,5 +3,5 @@
 #-ini(update-styx.world,5)-#
 
 #?os_linux_shortname==CLDXStyx#
-kde-base/kcachegrind
+kde-apps/kcachegrind
 #os_linux_shortname#

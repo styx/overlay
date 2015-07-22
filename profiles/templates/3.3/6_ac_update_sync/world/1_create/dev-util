@@ -3,6 +3,6 @@
 #?in(os_linux_pkglist, CLDXStyx)!=#
 dev-util/meld
 dev-util/valgrind
-kde-base/kcachegrind
+kde-apps/kcachegrind
 app-misc/jq
 #in#

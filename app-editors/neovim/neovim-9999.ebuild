@@ -18,7 +18,7 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="
-  app-admin/eselect-vi
+  app-eselect/eselect-vi
   sys-libs/ncurses
 "
 DEPEND="
@@ -37,4 +37,3 @@ src_configure()  {
   append-cflags "-D_FORTIFY_SOURCE=1"
   cmake-utils_src_configure
 }
-

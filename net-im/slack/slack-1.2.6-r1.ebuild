@@ -17,4 +17,5 @@ S="${WORKDIR}"
 src_install(){
 	insinto /
 	doins -r usr
+	fperms 755 /usr/share/slack/slack
 }

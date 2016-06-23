@@ -24,5 +24,5 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" LIBDIR="$(get_libdir)" PREFIX="/usr" install
-	dodoc README.md CHANGELOG.md CONTRIBUTING.md
+	dodoc README.md CHANGELOG.md CODE_OF_CONDUCT.md
 }
